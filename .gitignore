@@ -1,0 +1,29 @@
+#---- Ignore directories ----
+bin/
+obj/
+packages/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+*.log
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Files that can be added during resolving merge conflicts
+*.cs.orig
+*.log.orig
+
+# StyleCop
+*.Cache
