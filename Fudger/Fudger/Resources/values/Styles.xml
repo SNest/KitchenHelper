@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <!-- extend one of the Theme.AppCompat themes -->
+  <style name="Theme.MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- customize the color palette -->
+    <item name="colorPrimary">#86C2C1</item>
+    <item name="colorPrimaryDark">#F2F2F2</item>
+    <item name="colorAccent">#F2F2F2</item>
+  </style>
+  
+</resources>

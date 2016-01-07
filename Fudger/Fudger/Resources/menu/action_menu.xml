@@ -1,0 +1,9 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="toolbarOverlay.ToolbarOverlay">
+
+  <item android:id="@+id/action_oveflow" android:title="Overflow"
+        app:showAsAction="always" 
+        android:icon="@drawable/ic_action_overflow"/>
+</menu>
