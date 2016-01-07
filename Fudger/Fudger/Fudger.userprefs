@@ -1,1 +1,12 @@
-﻿<Properties StartupItem="Fudger.csproj" />
+﻿<Properties StartupItem="Fudger.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.HKE4QQXC" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resources\values\Styles.xml">
+    <Files>
+      <File FileName="Resources\values\Styles.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

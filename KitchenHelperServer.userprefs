@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Fudger\ToolbarOverlay_Tutorial\ToolbarOverlay_Tutorial.csproj">
+﻿<Properties StartupItem="Fudger\Fudger\Fudger.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.HKE4QQXC" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
