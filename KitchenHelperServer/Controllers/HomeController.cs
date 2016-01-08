@@ -8,13 +8,12 @@ namespace KitchenHelperServer.Controllers
         {
             ViewBag.Title = "Home Page";
 
-            //var links = EdaRuParser.GetAllRecipeLinksByCategory("vypechka-deserty", 10).ToList();
+            // var links = EdaRuParser.GetAllRecipeLinksByCategory("vypechka-deserty", 10).ToList();
 
-            //EdaRuParser.SaveAllProductsToDb(links);
-            //EdaRuParser.SaveAllIngredientsToDb(links);
-            //EdaRuParser.SaveAllRecipeStepsToDb(links);
-            //EdaRuParser.SaveAllRecipesToDb(links);
-
+            // EdaRuParser.SaveAllProductsToDb(links);
+            // EdaRuParser.SaveAllIngredientsToDb(links);
+            // EdaRuParser.SaveAllRecipeStepsToDb(links);
+            // EdaRuParser.SaveAllRecipesToDb(links);
             return View();
         }
     }

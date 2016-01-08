@@ -24,7 +24,7 @@ namespace KitchenHelperServer.Controllers
         [ResponseType(typeof(Recipe))]
         public IHttpActionResult GetRecipe(int id)
         {
-            var recipe = _db.Recipes.Include(_ => _.Ingredients).Include(_ => _.RecipeSteps).SingleOrDefault(_ => _.Id == id);
+            var recipe = _db.Recipes.Include("Ingredients.Product").Include(_ => _.RecipeSteps).SingleOrDefault(_ => _.Id == id);
             if (recipe == null)
             {
                 return NotFound();
