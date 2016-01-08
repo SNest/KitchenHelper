@@ -3,24 +3,37 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvRecipeName" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="139.5dp"
-        android:id="@+id/tvIngrs"
-        android:layout_marginTop="33.0dp"
-        android:layout_marginBottom="79.5dp" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvHowToCook"
-        android:layout_marginTop="23.5dp"
-        android:layout_marginBottom="25.5dp" />
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvRecipeName"
+                android:layout_marginBottom="46.5dp" />
+            <TextView
+                android:text="Text"
+                android:id="@+id/tvIngrs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="51.0dp" />
+            <TextView
+                android:text="Text"
+                android:id="@+id/tvHowToCook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
