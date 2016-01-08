@@ -24,6 +24,7 @@ namespace MyFirstAndroidApp
 		protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+			SetContentView (Resource.Layout.Recipe);
 
             // Create your application here
             name = FindViewById<TextView>(Resource.Id.tvRecipeName);
@@ -33,7 +34,23 @@ namespace MyFirstAndroidApp
             SQLiteRepository qlr = new SQLiteRepository();
             Recipe res = qlr.GetRecipeByName(Intent.GetStringExtra("name"));       //activity2.PutExtra ("MyData", "Data from Activity1");
 
+			name.Text = res.Name;
 
+			String temp = String.Empty;
+			foreach (Ingredient ing in res.Ingredients) 
+			{
+				temp += String.Format ("-{0}\t{1};\n", ing.Product.Name, ing.Quantity);
+			}
+
+			ingredients.Text = temp;
+
+
+			temp = String.Empty;
+			foreach (RecipeStep step in res.RecipeSteps) 
+			{
+				temp += String.Format ("{0}\n", step.Description);
+			}
+			cookProc.Text = temp;
 
         }
     }

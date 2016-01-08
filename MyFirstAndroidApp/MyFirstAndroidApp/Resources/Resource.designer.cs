@@ -1381,8 +1381,8 @@ namespace MyFirstAndroidApp
 			// aapt resource value: 0x7f0c0025
 			public const int action_mode_close_button = 2131492901;
 			
-			// aapt resource value: 0x7f0c0062
-			public const int action_search = 2131492962;
+			// aapt resource value: 0x7f0c0064
+			public const int action_search = 2131492964;
 			
 			// aapt resource value: 0x7f0c0026
 			public const int activity_chooser_view_content = 2131492902;
@@ -1477,6 +1477,9 @@ namespace MyFirstAndroidApp
 			// aapt resource value: 0x7f0c005a
 			public const int line3 = 2131492954;
 			
+			// aapt resource value: 0x7f0c0060
+			public const int linearLayout1 = 2131492960;
+			
 			// aapt resource value: 0x7f0c0009
 			public const int listMode = 2131492873;
 			
@@ -1486,8 +1489,8 @@ namespace MyFirstAndroidApp
 			// aapt resource value: 0x7f0c005e
 			public const int lvProducts = 2131492958;
 			
-			// aapt resource value: 0x7f0c0064
-			public const int lvRecipes = 2131492964;
+			// aapt resource value: 0x7f0c0066
+			public const int lvRecipes = 2131492966;
 			
 			// aapt resource value: 0x7f0c0054
 			public const int media_actions = 2131492948;
@@ -1527,6 +1530,9 @@ namespace MyFirstAndroidApp
 			
 			// aapt resource value: 0x7f0c0032
 			public const int scrollView = 2131492914;
+			
+			// aapt resource value: 0x7f0c005f
+			public const int scrollView1 = 2131492959;
 			
 			// aapt resource value: 0x7f0c0044
 			public const int search_badge = 2131492932;
@@ -1615,17 +1621,17 @@ namespace MyFirstAndroidApp
 			// aapt resource value: 0x7f0c002e
 			public const int topPanel = 2131492910;
 			
-			// aapt resource value: 0x7f0c0061
-			public const int tvHowToCook = 2131492961;
-			
-			// aapt resource value: 0x7f0c0060
-			public const int tvIngrs = 2131492960;
-			
-			// aapt resource value: 0x7f0c005f
-			public const int tvRecipeName = 2131492959;
-			
 			// aapt resource value: 0x7f0c0063
-			public const int tvResults = 2131492963;
+			public const int tvHowToCook = 2131492963;
+			
+			// aapt resource value: 0x7f0c0062
+			public const int tvIngrs = 2131492962;
+			
+			// aapt resource value: 0x7f0c0061
+			public const int tvRecipeName = 2131492961;
+			
+			// aapt resource value: 0x7f0c0065
+			public const int tvResults = 2131492965;
 			
 			// aapt resource value: 0x7f0c0008
 			public const int up = 2131492872;
