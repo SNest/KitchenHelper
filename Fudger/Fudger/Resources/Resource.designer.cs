@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ToolbarOverlay_Tutorial.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Fudger.Resource", IsApplication=true)]
 
-namespace ToolbarOverlay_Tutorial
+namespace Fudger
 {
 	
 	

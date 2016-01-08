@@ -1,20 +1,19 @@
 ﻿<Properties StartupItem="Fudger\Fudger\Fudger.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.HKE4QQXC" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus4" />
   <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="KitchenHelperServer" expanded="True">
-            <Node name="ToolbarOverlay_Tutorial" expanded="True" selected="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
+    <Files>
+      <File FileName="Fudger\Fudger\DAL\DBRepository.cs" Line="54" Column="2" />
+      <File FileName="Fudger\Fudger\Models\Entity.cs" Line="1" Column="1" />
+    </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="C:\Users\Начальник\AppData\Local\Temp\__layoutFile" line="13" column="1" />
+      <Breakpoint file="C:\Users\Начальник\AppData\Local\Temp\__layoutFile" line="48" column="1" />
+      <Breakpoint file="E:\studying\4_course\Turuta\KitchenHelper\Fudger\Fudger\MainActivity.cs" line="55" column="54" />
+      <Breakpoint traceExpression="{s}" file="E:\studying\4_course\Turuta\KitchenHelper\Fudger\Fudger\MainActivity.cs" line="56" column="1" />
+      <Breakpoint traceExpression="{response2.Content}" file="E:\studying\4_course\Turuta\KitchenHelper\Fudger\Fudger\MainActivity.cs" line="53" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Fudger AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

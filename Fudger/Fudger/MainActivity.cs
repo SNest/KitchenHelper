@@ -9,6 +9,12 @@ using Android.OS;
 using Android.Support.V7.App;
 using SupportToolBar = Android.Support.V7.Widget.Toolbar;
 using Android.Graphics;
+using RestSharp;
+using Fudger.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.IO;
+using Fudger;
 
 namespace ToolbarOverlay_Tutorial
 {
@@ -20,10 +26,11 @@ namespace ToolbarOverlay_Tutorial
 		private ScrollView mScrollView;
 		private int mScreenHeight;
 
+
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 			mToolbar = FindViewById<SupportToolBar>(Resource.Id.toolbar);
@@ -37,6 +44,30 @@ namespace ToolbarOverlay_Tutorial
 			mScreenHeight = size.Y;
 
 			mScrollView.ViewTreeObserver.AddOnScrollChangedListener(this);
+
+
+			string localPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "Fudger");
+
+			//Directory with your DB3 file
+			var dirx = Android.OS.Environment.ExternalStorageDirectory.ToString();
+
+			// DB File 
+			var dbfile = dirx + "/Fudger/kh_sql_lite.db";
+
+
+
+			if (File.Exists(dbfile))
+			{
+
+				File.Copy(dbfile, localPath, true);
+				Toast.MakeText(this, "SQLiteDB copied successfully!", ToastLength.Long).Show();
+
+
+			}
+			else
+			{
+				Toast.MakeText(this, "copy from " + System.Environment.NewLine + "to " + localPath + " failed or source file is missing!", ToastLength.Long).Show();
+			}
 		}
 
 		public float GetOpacity()
