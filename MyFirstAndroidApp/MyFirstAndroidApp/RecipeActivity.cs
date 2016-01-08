@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Fudger.DAL;
 using Fudger.Models;
+using RestSharp;
 
 namespace MyFirstAndroidApp
 {
@@ -20,6 +21,9 @@ namespace MyFirstAndroidApp
         TextView name;
         TextView ingredients;
         TextView cookProc;
+        Button btnCook;
+
+        Recipe res;
 
 		protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,9 +34,18 @@ namespace MyFirstAndroidApp
             name = FindViewById<TextView>(Resource.Id.tvRecipeName);
             ingredients = FindViewById<TextView>(Resource.Id.tvIngrs);
             cookProc = FindViewById<TextView>(Resource.Id.tvHowToCook);
+            btnCook = FindViewById<Button>(Resource.Id.btnCook);
+
+            btnCook.Click += (s, e) =>
+            {
+                ApiController ac = new ApiController();
+                ac.PutToFridge(res);        
+            };
+
+            btnCook.Clickable = this.CanRecipeBeCooked(res);
 
             SQLiteRepository qlr = new SQLiteRepository();
-            Recipe res = qlr.GetRecipeByName(Intent.GetStringExtra("name"));       //activity2.PutExtra ("MyData", "Data from Activity1");
+            res = qlr.GetRecipeByName(Intent.GetStringExtra("name"));       //activity2.PutExtra ("MyData", "Data from Activity1");
 
 			name.Text = res.Name;
 
@@ -51,6 +64,27 @@ namespace MyFirstAndroidApp
 				temp += String.Format ("{0}\n", step.Description);
 			}
 			cookProc.Text = temp;
+
+        }
+
+        private Boolean CanRecipeBeCooked(Recipe res)
+        {
+
+			var client = new RestClient ("http://fudger.azurewebsites.net");
+
+			var request = new RestRequest("/api/PutFridge", Method.POST);
+			SQLiteRepository slr = new SQLiteRepository ();
+
+			String token = slr.GetToken ().AppToken;
+			request.AddUrlSegment("appToken", token);
+			request.AddObject(res);
+
+
+			IRestResponse<List<Product>> response2 = client.Execute<List<Product>>(request);
+			if (response2.StatusCode != System.Net.HttpStatusCode.OK) {
+				return false;
+			}
+			return true;
 
         }
     }

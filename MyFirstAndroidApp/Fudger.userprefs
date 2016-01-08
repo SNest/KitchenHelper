@@ -1,14 +1,23 @@
 ﻿<Properties StartupItem="MyFirstAndroidApp\Fudger.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.HKE4QQXC" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="e:\studying\4_course\Turuta\KitchenHelper\MyFirstAndroidApp\MyFirstAndroidApp\RecipeActivity.cs">
     <Files>
-      <File FileName="MyFirstAndroidApp\ProductListActivity.cs" Line="33" Column="1" />
+      <File FileName="MyFirstAndroidApp\ShoppingListActivity.cs" Line="1" Column="1" />
+      <File FileName="MyFirstAndroidApp\ProductListActivity.cs" Line="1" Column="1" />
+      <File FileName="MyFirstAndroidApp\RecipeListActivity.cs" Line="1" Column="1" />
+      <File FileName="MyFirstAndroidApp\DAL\SQLiteRepository.cs" Line="1" Column="1" />
+      <File FileName="MyFirstAndroidApp\DAL\ApiController.cs" Line="1" Column="1" />
+      <File FileName="MyFirstAndroidApp\DAL\SQLiteInitializer.cs" Line="1" Column="1" />
+      <File FileName="MyFirstAndroidApp\LoginActivity.cs" Line="1" Column="1" />
+      <File FileName="MyFirstAndroidApp\MainActivity.cs" Line="1" Column="1" />
       <File FileName="MyFirstAndroidApp\packages.config" Line="1" Column="1" />
+      <File FileName="e:\studying\4_course\Turuta\KitchenHelper\MyFirstAndroidApp\MyFirstAndroidApp\RecipeActivity.cs" Line="78" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="E:\studying\4_course\Turuta\MyFirstAndroidApp\MyFirstAndroidApp\ProductListActivity.cs" line="33" column="86" />
+      <Breakpoint file="E:\studying\4_course\Turuta\KitchenHelper\MyFirstAndroidApp\MyFirstAndroidApp\LoginActivity.cs" line="69" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

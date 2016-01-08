@@ -14,6 +14,6 @@ namespace Fudger.Models
 {
     public class ShoppingList : Entity
     {
-
+		public List<Product> ProductsToBuy { get; set; }
     }
 }

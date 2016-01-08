@@ -29,6 +29,7 @@ namespace Fudger.DAL
 				sqlConnection.CreateTable<Product>();
 				sqlConnection.CreateTable<RecipeStep>();
 				sqlConnection.CreateTable<Recipe>();
+				sqlConnection.CreateTable<UserGroup>();
 				return "Tables Created";
 			}
 			catch(Exception ex) 
@@ -60,6 +61,18 @@ namespace Fudger.DAL
 			
 			sqlConnection.Insert (new Recipe{ Name = n, MinutesForCooking = mForCooking });				
 		}
+
+		public void SaveToken(UserGroup ug)
+		{
+			sqlConnection.DeleteAll<UserGroup>();
+			sqlConnection.Insert (ug);
+		}
+
+		public UserGroup GetToken()
+		{
+			return sqlConnection.Table<UserGroup> ().FirstOrDefault ();
+		}
+
 		#endregion
 	
 		#region Getters(All)
@@ -147,6 +160,11 @@ namespace Fudger.DAL
 			return res;
 
         }
+
+		public Product GetProductByName(String name)
+		{
+			return sqlConnection.Table<Product>().FirstOrDefault(p => p.Name == name);
+		}
         #endregion
     }
 }

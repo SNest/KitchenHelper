@@ -15,7 +15,5 @@ namespace Fudger.Models
     public class Dish : Entity
     {
         public Int32 RecipeId { get; set; }
-        
-        //public 
     }
 }

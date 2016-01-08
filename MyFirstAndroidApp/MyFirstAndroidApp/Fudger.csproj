@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Models\Dish.cs" />
     <Compile Include="Models\Fridge.cs" />
@@ -87,6 +88,8 @@
     <Compile Include="DAL\SQLiteInitializer.cs" />
     <Compile Include="ProductListActivity.cs" />
     <Compile Include="SearchMenuActivity.cs" />
+    <Compile Include="DAL\ApiController.cs" />
+    <Compile Include="ShoppingListActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -102,6 +105,10 @@
     <AndroidResource Include="Resources\layout\Recipe.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Login.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ShoppingList.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />

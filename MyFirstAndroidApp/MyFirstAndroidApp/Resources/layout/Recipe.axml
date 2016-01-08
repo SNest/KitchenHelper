@@ -34,6 +34,12 @@
                 android:id="@+id/tvHowToCook"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+            <Button
+                android:text="Cook"
+                android:layout_width="213.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCook"
+                android:layout_marginLeft="89.0dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
