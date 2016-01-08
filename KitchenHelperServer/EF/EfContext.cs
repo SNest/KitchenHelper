@@ -28,6 +28,12 @@ namespace KitchenHelperServer.EF
         
         public DbSet<Ingredient> Ingredients { get; set; }
 
+        public DbSet<UserGroup> UserGroups { get; set; }
+
+        public DbSet<ProductStorage> ProductStorages { get; set; }
+
+        public DbSet<Fridge> Fridges { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Recipe>().ToTable("Recipes");

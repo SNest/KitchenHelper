@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitchenHelperServer", "KitchenHelperServer\KitchenHelperServer.csproj", "{0A60B67B-1AF8-4C5C-9C9B-D4F31E3099A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fudger", "Fudger\Fudger\Fudger.csproj", "{21E2B87A-CEE0-4158-AAF2-8A8DF9BB3F70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fudger", "MyFirstAndroidApp\MyFirstAndroidApp\Fudger.csproj", "{A6255950-4401-4760-B78E-980FE3E06AD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,12 @@ Global
 		{0A60B67B-1AF8-4C5C-9C9B-D4F31E3099A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A60B67B-1AF8-4C5C-9C9B-D4F31E3099A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A60B67B-1AF8-4C5C-9C9B-D4F31E3099A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21E2B87A-CEE0-4158-AAF2-8A8DF9BB3F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21E2B87A-CEE0-4158-AAF2-8A8DF9BB3F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21E2B87A-CEE0-4158-AAF2-8A8DF9BB3F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21E2B87A-CEE0-4158-AAF2-8A8DF9BB3F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6255950-4401-4760-B78E-980FE3E06AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6255950-4401-4760-B78E-980FE3E06AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6255950-4401-4760-B78E-980FE3E06AD9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A6255950-4401-4760-B78E-980FE3E06AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6255950-4401-4760-B78E-980FE3E06AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6255950-4401-4760-B78E-980FE3E06AD9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
