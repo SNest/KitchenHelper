@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="MyFirstAndroidApp\Fudger.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.HKE4QQXC" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="MyFirstAndroidApp\ProductListActivity.cs" Line="33" Column="1" />
+      <File FileName="MyFirstAndroidApp\packages.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="E:\studying\4_course\Turuta\MyFirstAndroidApp\MyFirstAndroidApp\ProductListActivity.cs" line="33" column="86" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Fudger AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>
